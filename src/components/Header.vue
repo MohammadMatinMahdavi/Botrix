@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 z-50 transition-all duration-300 backdrop-blur-xl bg-white/70">
+  <header class="sticky top-0 z-50 transition-all duration-300 backdrop-blur-xl bg-white/70 px-2 md:px-5">
     <div class="container mx-auto px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
       <div class="flex items-center gap-2 md:gap-4">
         <p class="text-2xl md:text-3xl font-extrabold text-green-700 tracking-wider transition-colors duration-300 hover:text-green-900">
@@ -8,18 +8,22 @@
       </div>
 
       <nav class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
-        <a href="#start-now" class="relative group hover:text-green-500 transition-all duration-300">
+        <router-link to="/#start-now" class="relative group hover:text-green-500 transition-all duration-300">
           خانه
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a href="#bots" class="relative group hover:text-green-500 transition-all duration-300">
+        </router-link>
+        <router-link to="/#bots" class="relative group hover:text-green-500 transition-all duration-300">
           پلتفرم ها
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-        </a>
-        <a href="#services" class="relative group hover:text-green-500 transition-all duration-300">
+        </router-link>
+        <router-link to="/#services" class="relative group hover:text-green-500 transition-all duration-300">
           خدمات
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
-        </a>
+        </router-link>
+        <router-link to="/channels" class="relative group hover:text-green-500 transition-all duration-300">
+            نمونه ها 
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+        </router-link>
       </nav>
 
       <a class="hidden md:block" href="https://t.me/Almostsleepy" target="_blank">
