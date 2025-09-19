@@ -91,7 +91,7 @@ export default {
           cardImage: exire,
           id: 6,
           content: "اکسیر! اصلا مگه ما میزاریم تو طول روز خدا از یادت بره؟ یه کانال معنوی پر از دعا و تدبر در قرآن و ....",
-          eitaaUrl: "https://eitaa.com/AI_Academy_Mi",
+          eitaaUrl: "https://eitaa.com/ExireElahi_Mi",
         },
         {
           cardImage: art,
