@@ -78,7 +78,7 @@ export default {
         {
           cardImage: omid,
           id: 4,
-          content: "امید! حس خوب زندگی رو اینجا تجربه کنید پر از محتوای بانشاط برای بهتر کردن حال شما",
+          content: "امید! پر از محتوای بانشاط برای بهتر کردن حال شما",
           eitaaUrl: "https://eitaa.com/BeautyLife_Mi",
         },
         {
@@ -90,7 +90,7 @@ export default {
         {
           cardImage: exire,
           id: 6,
-          content: "اکسیر! اصلا مگه ما میزاریم تو طول روز خدا از یادت بره؟ یه کانال معنوی پر از دعا و تدبر در قرآن و ....",
+          content: "اکسیر! اصلا یه کانال معنوی پر از دعا و تدبر در قرآن و ....",
           eitaaUrl: "https://eitaa.com/ExireElahi_Mi",
         },
         {

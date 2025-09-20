@@ -4,6 +4,7 @@
     <div class="mx-10">
     <TablighChannels/>
     <Divars/>
+    <Float/>
     </div>
     <Footer/>
 </template>
@@ -15,5 +16,6 @@ import Divars from "../components/Divars.vue";
 import Footer from '../components/Footer.vue'
 import TablighChannelsVue from '../components/TablighChannels.vue';
 import Banner from "../components/PromoBanner.vue";
+import Float from "../components/FloatingButton.vue";
 
 </script>

@@ -2,12 +2,14 @@
   <div class="fixed bottom-8 left-8 z-50">
     <button
       @click="togglePanel"
-      class="w-16 h-16 rounded-full bg-green-500 text-white shadow-lg flex items-center justify-center
-             transition-transform duration-300 transform hover:scale-110 focus:outline-none"
-      :class="{ 'rotate-45': isOpen }"
+      class="relative w-16 h-16 rounded-full bg-green-500 text-white shadow-lg flex items-center justify-center
+             transition-transform duration-300 transform hover:scale-110 focus:outline-none overflow-hidden animate-bounce-float"
     >
+      <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-green-500 via-white/20 to-green-500 animate-pulse-light"></div>
+      
       <svg
-        class="w-8 h-8 transition-transform duration-300"
+        class="w-8 h-8 relative z-10 transition-transform duration-300"
+        :class="{ 'rotate-45': isOpen }"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -64,5 +66,36 @@ const togglePanel = () => {
 .slide-fade-leave-to {
   transform: translateY(20px);
   opacity: 0;
+}
+
+/* انیمیشن نور داخلی */
+@keyframes pulse-light {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-pulse-light {
+  animation: pulse-light 5s infinite;
+}
+
+/* انیمیشن بیرونی برای حرکت دکمه */
+@keyframes bounce-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-bounce-float {
+  animation: bounce-float 2s infinite ease-in-out;
 }
 </style>
