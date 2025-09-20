@@ -1,5 +1,5 @@
 <template>
-  <div id="services" class="bg-white text-gray-800 rounded-xl p-6 md:p-10 shadow-lg mt-10">
+  <div id="services" class="bg-white text-gray-800 rounded-xl p-6 md:p-10 shadow-lg mt-10 mx-20">
     <div class="text-center mb-10">
       <h2 class="text-3xl md:text-4xl font-bold mb-2">خدماتی که ما ارائه می‌دهیم</h2>
       <p class="text-lg md:text-xl text-gray-600">

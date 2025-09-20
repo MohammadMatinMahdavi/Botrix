@@ -1,6 +1,6 @@
 <template>
   <div class="main-container bg-slate-900 w-full p-10 flex justify-center items-center rounded-lg mt-10">
-    <div class="relative w-full max-w-5xl h-[500px] flex items-center justify-center ">
+    <div class="relative w-full h-[500px] flex items-center justify-center ">
 
       <button 
         @click="nextCard"
@@ -13,7 +13,7 @@
         v-for="(card, index) in cardsInfo"
         :key="card.id"
         :class="getCardPositionClass(index)"
-        class="main_card p-2 text-white w-full max-w-sm rounded-xl flex flex-col h-96 border border-gray-700 shadow-xl absolute transition-all duration-700 ease-in-out"
+        class="main_card p-2 text-white w-full max-w-80 rounded-xl flex flex-col h-96 border border-gray-700 shadow-xl absolute transition-all duration-700 ease-in-out"
       >
         <div class="card_pic w-full h-60">
           <img 

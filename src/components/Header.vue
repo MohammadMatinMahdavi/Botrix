@@ -45,10 +45,11 @@
     
     <div v-if="isMenuOpen" class="md:hidden mt-4 transition-all duration-300 ease-in-out">
       <nav class="flex flex-col gap-4 text-gray-600 font-medium text-center bg-gray-50 rounded-lg p-4 shadow-inner">
-        <a @click="closeMenu" href="#start-now" class="py-2 hover:bg-gray-200 rounded-md transition-colors">خانه</a>
-        <a @click="closeMenu" href="#bots" class="py-2 hover:bg-gray-200 rounded-md transition-colors">ربات ها</a>
-        <a @click="closeMenu" href="#services" class="py-2 hover:bg-gray-200 rounded-md transition-colors">خدمات</a>
-        <a @click="closeMenu" href="https://t.me/Almostsleepy" class="py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-colors">تماس با ما</a>
+        <router-link @click="closeMenu" to="/#start-now" class="py-2 hover:bg-gray-200 rounded-md transition-colors">خانه</router-link>
+        <router-link @click="closeMenu" to="/#bots" class="py-2 hover:bg-gray-200 rounded-md transition-colors">ربات ها</router-link>
+        <router-link @click="closeMenu" to="/#services" class="py-2 hover:bg-gray-200 rounded-md transition-colors">خدمات</router-link>
+        <router-link to="/channels">نمونه ها</router-link>
+        <a @click="closeMenu" href="https://t.me/Almostsleepy" class="py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transition-colors">ارتباط با ما</a>
       </nav>
     </div>
   </header>

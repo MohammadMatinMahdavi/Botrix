@@ -1,12 +1,14 @@
 <template>
 <div dir="rtl" class="">
+   <Banner/>
    <Header/>
    <div class="mx-10">
    <StartNow id="start-now"/>
-   <Slider/>
    <Bots id="bots"/>
+   <Slider/>
    <Services id="services"/>
    <Order/>
+   <Float/>
    </div>
    <Footer/>
 </div>
@@ -19,4 +21,6 @@ import Services from '../components/Services.vue' // کامپوننت خدمات
 import Order from '../components/Order.vue' // کامپوننت ثبت سفارش
 import Footer from '../components/Footer.vue'
 import Slider from '../components/Slider.vue'
+import Float from "../components/FloatingButton.vue";
+import Banner from "../components/PromoBanner.vue";
 </script>

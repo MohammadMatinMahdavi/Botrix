@@ -6,14 +6,14 @@
         باتریکس با ارائه بات‌های پیشرفته، به شما کمک می‌کند تا کانال‌های خود را در این پلتفرم‌ها به صورت خودکار مدیریت کنید.
       </p>
     </div>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 justify-items-center">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 justify-items-center">
       <div
         v-for="platform in platforms"
         :key="platform.name"
         class="bg-white p-4 rounded-xl shadow-md transition-all duration-300 transform hover:scale-105"
       >
         <div class="flex flex-col items-center">
-          <img :src="platform.src" :alt="platform.name" class="w-24 h-24 md:w-32 md:h-32 object-contain mx-auto" />
+          <img :src="platform.src" :alt="platform.name" class=" w-20 h-20 md:w-24 md:h-24 object-contain mx-auto" />
           <p class="mt-2 text-center text-lg font-medium">{{ platform.name }}</p>
         </div>
       </div>
@@ -27,12 +27,13 @@ import eitaaIcon from '../assets/images/eitaa-icon.jpg';
 import baleIcon from '../assets/images/bale-icon.jpg';
 import telegramIcon from '../assets/images/telegram-icon.jpg';
 import whatsupIcon from '../assets/images/whatsup-icon.jpg';
-
+import instaIcon from '../assets/images/insta-icon.jpg'
 const platforms = [
   { name: 'روبیکا', src: rubikaIcon },
   { name: 'ایتا', src: eitaaIcon },
   { name: 'بله', src: baleIcon },
   { name: 'تلگرام', src: telegramIcon },
   { name: 'واتساپ', src: whatsupIcon },
+  { name: 'اینستاگرام', src: instaIcon },
 ];
 </script>

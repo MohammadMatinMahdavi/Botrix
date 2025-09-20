@@ -1,12 +1,9 @@
 <template>
-  <div id="start-now" class="mt-20 bg-white text-gray-800 flex flex-col md:flex-row items-center gap-10">
+  <div id="start-now" class="mt-10 bg-white text-gray-800 flex flex-col md:flex-row items-center gap-10">
     <div class="w-full md:w-1/2 text-center md:text-right">
-      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-gray-900">
-        <span class="text-green-600">بات‌های پیشرفته</span>
-        <br/>
-           <span>برای</span> 
-          <br/>
-          <span >کانال‌های شما</span>
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-gray-900 flex flex-col gap-5">
+        <div class="text-green-600">بات‌های پیشرفته</div>
+           <div>  برای کانال های شما</div>     
       </h1>
       <p class="mt-6 text-lg md:text-xl leading-relaxed text-gray-600">
         با ربات‌های ما، فعالیت رسانه‌ای خود را در پلتفرم‌های مختلف بهینه کنید و با کمترین هزینه، به موفقیت برسید.
@@ -27,5 +24,5 @@
 </template>
 
 <script setup>
-import happyImage from '../assets/images/happy.jpg';
+import happyImage from '../assets/images/introPic.png';
 </script>
